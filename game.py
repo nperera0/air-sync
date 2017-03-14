@@ -31,6 +31,7 @@ while True:                          #loop needed for window to stay open
 '''
 
 import pygame
+import sys
 from random import randint
 
 pygame.init()
@@ -55,7 +56,7 @@ while True:
 
             if click == 1:
                 print 'CLICKED!'
-                rectangle = pygame.Rect(randint(0,700),randint(0,500),100,100) # NOTE: boun checks here 
+                rectangle = pygame.Rect(randint(0,700),randint(0,500),100,100) # NOTE: boun checks here
                 pygame.display.update()
 
         if event.type == pygame.QUIT:
