@@ -10,6 +10,7 @@ sys.path.insert(0, os.path.abspath(os.path.join(src_dir, arch_dir)))
 
 import logging
 import Leap
+import msvcrt
 from Leap import CircleGesture, KeyTapGesture, ScreenTapGesture, SwipeGesture
 
 previousId = -1;
@@ -43,6 +44,8 @@ class LeapMotionListener(Leap.Listener):
 		controller.enable_gesture(Leap.Gesture.TYPE_KEY_TAP);
 		controller.enable_gesture(Leap.Gesture.TYPE_SCREEN_TAP);
 		controller.enable_gesture(Leap.Gesture.TYPE_SWIPE);
+		while msvcrt.kbhit():
+			msvcrt.getch()
 
 	def on_discoonect(self, controller):
 		print "Motion sensor Disconnected"
@@ -60,7 +63,7 @@ class LeapMotionListener(Leap.Listener):
 			outFile.write(" Accuracy is: "+str(1-float(float(err_counter)/(err_counter+1))));
 			outFile.write(" Expected step count: "+ str(abs(s_num - target_value)) +" Total step count: "+str(step_counter)+"\n");
 		print "Motion Sensor Exit"
-	
+			
 	def on_frame(self, controller):
 		#global logger
 		#logger.info('Log time');
@@ -76,7 +79,7 @@ class LeapMotionListener(Leap.Listener):
 		global t_end
 		global err_counter
 		global step_counter
-		
+			
 		if timer_flag == 0:
 			timer_flag = 1;
 			t_start = time.time();

@@ -105,55 +105,39 @@ while True:
         if(ClickCount == 4):
             textsurface = myfont.render(('Task 1: Increase the value from 1 to 5 using ' + CurrentGesture),1, (0, 0, 0))
             gameDisplay.blit(textsurface,(25,250))
-            textsurface = myfont.render(('Click on this screen when you are ready to perform the gesture'),1, (0, 0, 0))
+            textsurface = myfont.render(('Click on this screen to start'),1, (0, 0, 0))
             gameDisplay.blit(textsurface,(25,300))
-            textsurface = myfont.render(('Press enter on the other window after performing the gesture'),1, (0, 0, 0))
-            gameDisplay.blit(textsurface,(25,350))
-		
+
         if(ClickCount == 9):
             textsurface = myfont.render(('Task 2: Decrease the value from 5 to 3 using '  + CurrentGesture),1, (0, 0, 0))
             gameDisplay.blit(textsurface,(25,250))
-            textsurface = myfont.render(('Click on this screen when you are ready to perform the gesture'),1, (0, 0, 0))
+            textsurface = myfont.render(('Click on this screen to start'),1, (0, 0, 0))
             gameDisplay.blit(textsurface,(25,300))
-            textsurface = myfont.render(('Press enter on the other window after performing the gesture'),1, (0, 0, 0))
-            gameDisplay.blit(textsurface,(25,350))
 			
         if(ClickCount == 14):
             textsurface = myfont.render(('Task 3: Increase the value from 3 to 9 using '  + CurrentGesture),1, (0, 0, 0))
             gameDisplay.blit(textsurface,(25,250))
-            textsurface = myfont.render(('Click on this screen when you are ready to perform the gesture'),1, (0, 0, 0))
+            textsurface = myfont.render(('Click on this screen to start'),1, (0, 0, 0))
             gameDisplay.blit(textsurface,(25,300))
-            textsurface = myfont.render(('Press enter on the other window after performing the gesture'),1, (0, 0, 0))
-            gameDisplay.blit(textsurface,(25,350))
-		
+
         if(ClickCount == 19):
             textsurface = myfont.render(('Task 4: Increase the value from 9 to 13 using '  + CurrentGesture),1, (0, 0, 0))
             gameDisplay.blit(textsurface,(25,250))
-            textsurface = myfont.render(('Click on this screen when you are ready to perform the gesture'),1, (0, 0, 0))
+            textsurface = myfont.render(('Click on this screen to start'),1, (0, 0, 0))
             gameDisplay.blit(textsurface,(25,300))
-            textsurface = myfont.render(('Press enter on the other window after performing the gesture'),1, (0, 0, 0))
-            gameDisplay.blit(textsurface,(25,350))
 		
         if(ClickCount == 24):
             textsurface = myfont.render(('Task 5: Decrease the value from 13 to 5 using '  + CurrentGesture),1, (0, 0, 0))
             gameDisplay.blit(textsurface,(25,250))
-            textsurface = myfont.render(('Click on this screen when you are ready to perform the gesture'),1, (0, 0, 0))
+            textsurface = myfont.render(('Click on this screen to start'),1, (0, 0, 0))
             gameDisplay.blit(textsurface,(25,300))
-            textsurface = myfont.render(('Press enter on the other window after performing the gesture'),1, (0, 0, 0))
-            gameDisplay.blit(textsurface,(25,350))
 
         if(ClickCount == 29):
             textsurface = myfont.render(('Task 6: Decrease the value from 5 to 1 using '  + CurrentGesture),1, (0, 0, 0))
             gameDisplay.blit(textsurface,(25,250))
-            textsurface = myfont.render(('Click on this screen when you are ready to perform the gesture'),1, (0, 0, 0))
+            textsurface = myfont.render(('Click on this screen to start'),1, (0, 0, 0))
             gameDisplay.blit(textsurface,(25,300))
-            textsurface = myfont.render(('Press enter on the other window after performing the gesture'),1, (0, 0, 0))
-            gameDisplay.blit(textsurface,(25,350))
-		
-        #if(ClickCount == 29 and GestureCount < 3):
-		
 
-			
         if(GestureCount == 3):
             textsurface = myfont.render(' Thank you for completing the experiment :)', 1, (0, 0, 0))
             gameDisplay.blit(textsurface,(25,250))

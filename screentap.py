@@ -10,6 +10,7 @@ sys.path.insert(0, os.path.abspath(os.path.join(src_dir, arch_dir)))
 
 import Leap
 import time
+import msvcrt
 from Leap import CircleGesture, KeyTapGesture, ScreenTapGesture, SwipeGesture, Finger
 
 previousId = -1;
@@ -21,7 +22,6 @@ t_start = 0;
 t_end = 0;
 err_counter = 0;
 step_counter = 0;
-
 
 #def sigint_handler(signal, frame):
 #    print 'Interrupted !!'
@@ -59,6 +59,8 @@ class LeapMotionListener(Leap.Listener):
 		controller.enable_gesture(Leap.Gesture.TYPE_KEY_TAP);
 		controller.enable_gesture(Leap.Gesture.TYPE_SCREEN_TAP);
 		controller.enable_gesture(Leap.Gesture.TYPE_SWIPE);
+		while msvcrt.kbhit():
+			msvcrt.getch()
 
 	def on_discoonect(self, controller):
 		print "Motion sensor Disconnected"
