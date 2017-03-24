@@ -1,0 +1,4 @@
+Go from 1 to 5: 48.9730000496 Accuracy is: 0.333333333333 Expected step count: 4 Total step count: 10
+Go from 5 to 3: 27.868999958 Accuracy is: 1.0 Expected step count: 2 Total step count: 2
+Go from 3 to 9: 24.7229998112 Accuracy is: 1.0 Expected step count: 6 Total step count: 6
+Go from 9 to 13: 31.7740001678 Accuracy is: 1.0 Expected step count: 4 Total step count: 4
